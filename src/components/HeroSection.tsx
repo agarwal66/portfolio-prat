@@ -11,7 +11,7 @@ const HeroSection: React.FC = () => {
             className="order-2 md:order-1 animate-fade-in"
             style={{ animationDelay: "0.2s" }}
           >
-            <p className="text-primary mb-4">Hello, I'm Prateek Agarwal</p>
+            <p className="text-primary mb-4">Hi, I'm Prateek Agarwal</p>
             <h1 className="text-4xl md:text-6xl font-bold mb-4">
               <span className="text-gradient">Full Stack</span> Developer
             </h1>
