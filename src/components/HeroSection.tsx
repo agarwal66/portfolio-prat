@@ -2,6 +2,7 @@ import React from "react";
 import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import profileImg from "./profile.jpg"; // ✅ Correct import
+import pratImg from "./prat.png"; // ✅ Correct import
 const HeroSection: React.FC = () => {
   return (
     <section id="home" className="min-h-screen flex items-center pt-16">
@@ -67,7 +68,7 @@ const HeroSection: React.FC = () => {
               <div className="w-64 h-64 md:w-80 md:h-80 rounded-full bg-gradient-to-r from-primary to-purple-600 absolute blur-3xl opacity-25"></div>
               <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-primary/20 relative z-10">
               <img
-                  src={profileImg} // ✅ Use imported image here
+                  src={pratImg} // ✅ Use imported image here
                   alt="Profile"
                   className="w-full h-full object-cover"
                 />
