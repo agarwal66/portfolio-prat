@@ -27,7 +27,7 @@ const projects = [
     title: 'Hospital Management System',
     description: 'An analytics dashboard for social media platforms with data visualization and reporting features.',
     image: hospitalImg,
-    tags: ['Vue.js', 'D3.js', 'Node.js', 'Express', 'PostgreSQL'],
+    tags: ['React.js', 'D3.js', 'Node.js', 'Express', 'PostgreSQL'],
     demoUrl: 'https://careplus-frontend.vercel.app/',
     githubUrl: 'https://github.com/agarwal66/careplus-frontend',
   },
