@@ -50,7 +50,7 @@ const ContactSection: React.FC = () => {
                 </div>
                 <div>
                   <h4 className="font-medium">Phone</h4>
-                  <a href="tel:+1234567890" className="text-muted-foreground hover:text-primary transition-colors">
+                  <a href="tel:+91 9772159844" className="text-muted-foreground hover:text-primary transition-colors">
                     +91 9772159844
                   </a>
                 </div>

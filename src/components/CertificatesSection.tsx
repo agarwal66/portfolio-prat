@@ -14,8 +14,8 @@ const certificates = [
     issuer: 'Nptel',
     date: 'Nov 2024',
     image: n1Img,
-    url: '/public/Ethical Hacking.pdf'
-  },
+    url: '/Ethical Hacking.pdf' // no /public here!
+  },  
   {
     title: 'Dynamic Programming, Greedy Algorithms',
     issuer: 'Coursera',

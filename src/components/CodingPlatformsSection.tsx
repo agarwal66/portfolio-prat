@@ -39,7 +39,7 @@ const platforms = [
     },
     icon: <LineChart className="text-[#F78D1E]" size={24} />,
     color: 'bg-[#F78D1E]/10',
-    url: 'https://www.codingninjas.com/'
+    url: 'https://www.naukri.com/code360/profile/agarwal_55'
   }
 ];
 
