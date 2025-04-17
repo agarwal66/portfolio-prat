@@ -2,28 +2,54 @@
 import React from 'react';
 import { Award, ExternalLink } from 'lucide-react';
 import { Card, CardContent } from "@/components/ui/card";
-
+import c1Img from "./c1.png"
+import c2Img from "./c2.png"
+import c3Img from "./c3.png"
+import c4Img from "./c4.png"
+import n1Img from "./n1.png"
+import c5Img from "./c5.png"
 const certificates = [
   {
-    title: 'Full Stack Web Development',
-    issuer: 'Udemy',
-    date: 'April 2023',
-    image: 'https://images.unsplash.com/photo-1569012871812-f38ee64cd54c?q=80&w=1170&auto=format&fit=crop',
-    url: '#'
+    title: 'Ethical Hacking',
+    issuer: 'Nptel',
+    date: 'Nov 2024',
+    image: n1Img,
+    url: '/public/Ethical Hacking.pdf'
   },
   {
-    title: 'React & Redux Master Class',
+    title: 'Dynamic Programming, Greedy Algorithms',
     issuer: 'Coursera',
-    date: 'January 2023',
-    image: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1170&auto=format&fit=crop',
-    url: '#'
+    date: 'March 2024',
+    image: c1Img,
+    url: 'https://www.coursera.org/account/accomplishments/verify/WFGLMWY9NFRX'
   },
   {
-    title: 'Advanced JavaScript Concepts',
-    issuer: 'Frontend Masters',
-    date: 'October 2022',
-    image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1172&auto=format&fit=crop',
-    url: '#'
+    title: 'Approximation Algorithms and Linear Programming',
+    issuer: 'Coursera',
+    date: 'April 2024',
+    image: c2Img,
+    url: 'https://www.coursera.org/account/accomplishments/verify/7ULHG2CKU7AT'
+  },
+  {
+    title: 'Algorithms on Strings',
+    issuer: 'Coursera',
+    date: 'February 2024',
+    image: c3Img,
+    url: 'https://www.coursera.org/account/accomplishments/verify/73JBVYH3TFZ7'
+  },
+  {
+    title: 'Generative AI with Large Language Models',
+    issuer: 'Coursera',
+    date: 'April 2024',
+    image: c4Img,
+    url: 'https://www.coursera.org/account/accomplishments/verify/YKDWA39TRRRS'
+  },
+  {
+    title: 'Introduction to Java',
+    issuer: 'Coursera',
+    date: 'February 2024',
+    image: c5Img,
+    url: 'https://www.coursera.org/account/accomplishments/verify/X6F5HGD43NQ3'
   },
 ];
 
