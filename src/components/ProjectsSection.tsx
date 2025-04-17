@@ -12,7 +12,7 @@ const projects = [
     description: 'A full-stack e-commerce platform with product management, cart functionality, and secure checkout.',
     image: codingImg,
     tags: ['React', 'Node.js', 'MongoDB', 'Express', 'WebSocket.io'],
-    demoUrl: 'https://code-with-dude.up.railway.app/',
+    demoUrl: 'https://code-friends.onrender.com',
     githubUrl: 'https://github.com/agarwal66/code-friends',
   },
   {
