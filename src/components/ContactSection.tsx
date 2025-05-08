@@ -20,9 +20,9 @@ interface ContactSubmission {
 // 2. Create a Gmail service under Email Services
 // 3. Create an email template
 // 4. Get your user ID from Account > API Keys
-const EMAILJS_SERVICE_ID = "service_clyp4d7"; // From Email Services page
-const EMAILJS_TEMPLATE_ID = "template_xjj04gs"; // From Email Templates page
-const EMAILJS_USER_ID = "qf4z0brHVNA0xkUMd"; // From Account > API Keys page
+const EMAILJS_SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+const EMAILJS_TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+const EMAILJS_USER_ID = import.meta.env.VITE_EMAILJS_USER_ID;
 
 const ContactSection: React.FC = () => {
   const { toast } = useToast();
