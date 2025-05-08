@@ -57,7 +57,7 @@ const ContactSection: React.FC = () => {
         from_email: data.email,
         subject: `New Enquiry from ${data.name}`, 
         message: data.message,
-        to_email: "agarwalprateek666@gmail.com", // Your email address
+        to_email: "agarwalprateek55@gmail.com", // Your email address
       });
 
       toast({
@@ -117,10 +117,10 @@ const ContactSection: React.FC = () => {
                 <div>
                   <h4 className="font-medium">Phone</h4>
                   <a
-                    href="tel:+1234567890"
+                    href="tel:+919772159844"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
-                    +1 (234) 567-890
+                    +91 9772159844
                   </a>
                 </div>
               </div>
