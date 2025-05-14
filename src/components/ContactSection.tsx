@@ -1,10 +1,40 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Mail, Phone, MapPin, Send } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 
 const ContactSection: React.FC = () => {
+  const [submitted, setSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [name, setName] = useState(""); // Track the name for dynamic subject
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    const form = e.currentTarget;
+
+    const formData = new FormData(form);
+    formData.append("_captcha", "false");
+    formData.append("_template", "box");
+    formData.append("_subject", `New Enquiry from ${name}`); // Dynamically set the subject
+    formData.append("_autoresponse", "Thanks for reaching out! I’ll get back to you shortly.");
+
+    try {
+      await fetch("https://formsubmit.co/agarwalprateek55@gmail.com", {
+        method: "POST",
+        body: formData,
+      });
+
+      setSubmitted(true);
+      form.reset();
+    } catch (err) {
+      alert("Failed to send message. Please try again later.");
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <section id="contact" className="bg-background">
       <div className="section-container">
@@ -56,51 +86,52 @@ const ContactSection: React.FC = () => {
             </div>
           </div>
 
-          {/* Contact Form with FormSubmit */}
+          {/* Contact Form */}
           <div className="animate-slide-up" style={{ animationDelay: '0.4s' }}>
-            <form 
-              action="https://formsubmit.co/agarwalprateek55@gmail.com" 
-              method="POST" 
-              className="space-y-6"
-            >
-              {/* FormSubmit Config */}
-              <input type="hidden" name="_captcha" value="false" />
-              <input type="hidden" name="_template" value="table" />
-              <input type="hidden" name="_autoresponse" value="Thank you for contacting me! I’ll get back to you as soon as possible." />
-              <input type="hidden" name="_next" value="https://prateekagarwal.vercel.app/thank-you" />
-              <input type="hidden" name="_subject" value="New Enquiry from Portfolio Site" />
-
-              {/* Name & Email */}
-              <div className="grid grid-cols-2 gap-4">
-                <div className="space-y-2">
-                  <label htmlFor="name" className="text-sm">Name</label>
-                  <Input id="name" name="name" placeholder="Your name" required />
+            {submitted ? (
+              <div className="p-6 bg-green-100 text-green-700 rounded-lg text-center font-medium">
+                ✅ Thank you for submitting! I’ll get back to you soon.
+              </div>
+            ) : (
+              <form onSubmit={handleSubmit} className="space-y-6">
+                <div className="grid grid-cols-2 gap-4">
+                  <div className="space-y-2">
+                    <label htmlFor="name" className="text-sm">Name</label>
+                    <Input 
+                      id="name" 
+                      name="name" 
+                      placeholder="Your name" 
+                      required 
+                      value={name} 
+                      onChange={(e) => setName(e.target.value)} // Update name state
+                    />
+                  </div>
+                  <div className="space-y-2">
+                    <label htmlFor="email" className="text-sm">Email</label>
+                    <Input id="email" name="email" type="email" placeholder="Your email" required />
+                  </div>
                 </div>
+
                 <div className="space-y-2">
-                  <label htmlFor="email" className="text-sm">Email</label>
-                  <Input id="email" name="email" type="email" placeholder="Your email" required />
-                  <input type="hidden" name="_replyto" />
+                  <label htmlFor="subject" className="text-sm">Subject</label>
+                  <Input id="subject" name="subject" placeholder="Subject" required />
                 </div>
-              </div>
 
-              {/* Subject */}
-              <div className="space-y-2">
-                <label htmlFor="subject" className="text-sm">Subject</label>
-                <Input id="subject" name="subject" placeholder="Subject" required />
-              </div>
+                <div className="space-y-2">
+                  <label htmlFor="message" className="text-sm">Message</label>
+                  <Textarea id="message" name="message" placeholder="Your message" rows={5} required />
+                </div>
 
-              {/* Message */}
-              <div className="space-y-2">
-                <label htmlFor="message" className="text-sm">Message</label>
-                <Textarea id="message" name="message" placeholder="Your message" rows={5} required />
-              </div>
-
-              {/* Submit Button */}
-              <Button type="submit" className="bg-primary hover:bg-primary/80 w-full">
-                <Send size={18} className="mr-2" />
-                Send Message
-              </Button>
-            </form>
+                <Button 
+                  type="submit" 
+                  className="bg-primary hover:bg-primary/80 w-full"
+                  disabled={isSubmitting}
+                >
+                  <Send size={18} className="mr-2" />
+                  {isSubmitting ? 'Sending...' : 'Send Message'}
+                </Button>
+              </form>
+            )}
           </div>
         </div>
       </div>
@@ -109,6 +140,7 @@ const ContactSection: React.FC = () => {
 };
 
 export default ContactSection;
+
 
 
 // --Sendinblue ke through bhejna ho to uska code ---------------
