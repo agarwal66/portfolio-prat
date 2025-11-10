@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import codingImg from "./coding.png"; // Example image, replace with actual image
 import hospitalImg from "./hospital.png"; // Example image, replace with actual image
+import smartImg from "./smart.png"
 const projects = [
   {
     title: 'Code-With-Friends',
@@ -18,7 +19,7 @@ const projects = [
    {
     title: 'Smart-persona-writer',
     description: 'Developed a dynamic content-generation application using the Groq API (Mixtral LLM) with customizable inputs for tone, intent, and writing style. Implemented Google OAuth for secure authentication and stored user content history persistently in MongoDB. Enabled users to export generated content as downloadable PDFs through integrated PDF generation support.',
-    image: codingImg,
+    image: smartImg,
     tags: ['Nextjs', 'Node.js', 'MongoDB', 'Express', 'Groq API', 'Google OAuth'],
     demoUrl: 'https://smart-persona-writer.vercel.app/',
     githubUrl: 'https://github.com/agarwal66/Smart-Persona-Writer',
