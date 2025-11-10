@@ -21,7 +21,7 @@ const Footer: React.FC = () => {
               <a href="https://github.com/agarwal66" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
                 <Github size={20} />
               </a>
-              <a href="https://www.linkedin.com/in/prateekpassionate/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
+              <a href="https://www.linkedin.com/in/prateekagarwal19/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
                 <Linkedin size={20} />
               </a>
               <a href="mailto:agarwalprateek666@gmail.com" className="hover:text-primary transition-colors">
