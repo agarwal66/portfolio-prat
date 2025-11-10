@@ -44,7 +44,7 @@ const HeroSection: React.FC = () => {
                 <Github size={24} />
               </a>
               <a
-                href="https://www.linkedin.com/in/prateekpassionate/"
+                href="https://www.linkedin.com/in/prateekagarwal19/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-primary transition-colors"
