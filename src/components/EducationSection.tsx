@@ -9,7 +9,7 @@ const educationData = [
     institution: 'Lovely Professional University',
     location: 'Phagwara',
     description: 'B.Tech in Computer Science & Engineering',
-    cgpa: '7.00/10',
+    cgpa: '7.4/10',
     icon: <GraduationCap className="h-8 w-8 text-primary" />,
   },
   {
