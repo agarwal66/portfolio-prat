@@ -8,12 +8,20 @@ import codingImg from "./coding.png"; // Example image, replace with actual imag
 import hospitalImg from "./hospital.png"; // Example image, replace with actual image
 const projects = [
   {
-    title: 'Code-With-Dude',
-    description: 'A full-stack e-commerce platform with product management, cart functionality, and secure checkout.',
+    title: 'Code-With-Friends',
+    description: 'A full-stack real-time collaborative code editor built with React, Node.js, Express, MongoDB, and Socket.IO. Supports live code syncing, chat, voice chat, and Judge0-powered code execution.',
     image: codingImg,
-    tags: ['React', 'Node.js', 'MongoDB', 'Express', 'WebSocket.io'],
-    demoUrl: 'https://code-friends.onrender.com',
-    githubUrl: 'https://github.com/agarwal66/code-friends',
+    tags: ['React', 'Node.js', 'MongoDB', 'Express', 'WebSocket.io', 'Judge0 API', 'Monaco Editor'],
+    demoUrl: 'https://codewithfriends.vercel.app/',
+    githubUrl: 'https://github.com/agarwal66/CodeWithFriends-V1',
+  },
+   {
+    title: 'Smart-persona-writer',
+    description: 'Developed a dynamic content-generation application using the Groq API (Mixtral LLM) with customizable inputs for tone, intent, and writing style. Implemented Google OAuth for secure authentication and stored user content history persistently in MongoDB. Enabled users to export generated content as downloadable PDFs through integrated PDF generation support.',
+    image: codingImg,
+    tags: ['Nextjs', 'Node.js', 'MongoDB', 'Express', 'Groq API', 'Google OAuth'],
+    demoUrl: 'https://smart-persona-writer.vercel.app/',
+    githubUrl: 'https://github.com/agarwal66/Smart-Persona-Writer',
   },
   {
     title: 'Chat-App',
