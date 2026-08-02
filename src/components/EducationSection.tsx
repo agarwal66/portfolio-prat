@@ -4,12 +4,12 @@ import { GraduationCap, School, BookOpen } from 'lucide-react';
 
 const educationData = [
   {
-    years: '2022 - 2025',
+    years: 'Aug 2022 - Jun 2026',
     degree: 'B.Tech CSE',
     institution: 'Lovely Professional University',
     location: 'Phagwara',
     description: 'B.Tech in Computer Science & Engineering',
-    cgpa: '7.4/10',
+    cgpa: '7.7/10',
     icon: <GraduationCap className="h-8 w-8 text-primary" />,
   },
   {

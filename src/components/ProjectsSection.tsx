@@ -7,6 +7,7 @@ import { Badge } from "@/components/ui/badge";
 import codingImg from "./coding.png"; // Example image, replace with actual image
 import hospitalImg from "./hospital.png"; // Example image, replace with actual image
 import smartImg from "./smart.png"
+import careerImg from "./career.png"
 const projects = [
   {
     title: 'Code-With-Friends',
@@ -16,7 +17,31 @@ const projects = [
     demoUrl: 'https://codewithfriends.vercel.app/',
     githubUrl: 'https://github.com/agarwal66/CodeWithFriends-V1',
   },
-   {
+  {
+    title: 'CareerPilot Ai',
+    description: 'Built a full-stack AI career assistant featuring ATS Resume Checker, AI Resume Builder, Job Matcher, LinkedIn Profile Analyzer, Interview Preparation, and personalized career recommendations. Integrated LLM APIs with Next.js, Node.js, Express.js, and MongoDB to deliver intelligent, real-time career guidance.',
+    image: careerImg,
+    tags: ["Next.js",
+  "React.js",
+  "Tailwind CSS",
+  "Node.js",
+  "Express.js",
+  "MongoDB",
+  "Mongoose",
+  "JWT",
+  "Axios",
+  "REST APIs",
+  "OpenAI",
+  "Gemini",
+  "LLM APIs",
+  "Prompt Engineering",
+  "Git",
+  "GitHub",
+  "Vercel"],
+    demoUrl: 'https://careerpilotaiv1.vercel.app/',
+    githubUrl: 'https://github.com/agarwal66/CareerPilot-AI',
+  },
+  {
     title: 'Smart-persona-writer',
     description: 'Developed a dynamic content-generation application using the Groq API (Mixtral LLM) with customizable inputs for tone, intent, and writing style. Implemented Google OAuth for secure authentication and stored user content history persistently in MongoDB. Enabled users to export generated content as downloadable PDFs through integrated PDF generation support.',
     image: smartImg,
@@ -60,7 +85,7 @@ const ProjectsSection: React.FC = () => {
               className="card-gradient overflow-hidden border-secondary animate-slide-up"
               style={{ animationDelay: `${0.2 + index * 0.1}s` }}
             >
-              <div className="h-48 overflow-hidden">
+              <div className="h-50 overflow-hidden">
                 <img 
                   src={project.image} 
                   alt={project.title} 
