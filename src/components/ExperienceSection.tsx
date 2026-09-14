@@ -12,7 +12,7 @@ import { Badge } from "@/components/ui/badge";
 const ExperienceSection: React.FC = () => {
   const experiences = [
     {
-      title: "Web Developer Intern",
+      title: "Web Developer (Full Time)",
       company: "Top Crew Aviation",
       location: "Jaipur, Rajasthan",
       period: "Oct 2025 – Jun 2026",
