@@ -15,7 +15,7 @@ const ExperienceSection: React.FC = () => {
       title: "Web Developer (Full Time)",
       company: "Top Crew Aviation",
       location: "Jaipur, Rajasthan",
-      period: "Oct 2025 – Jun 2026",
+      period: "Sep 2025 – Jun 2026",
       description: [
         "Developed responsive web features using React.js, JavaScript, HTML, and CSS.",
         "Integrated REST APIs to enable seamless communication between frontend and backend systems.",

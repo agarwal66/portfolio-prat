@@ -52,7 +52,7 @@ const AboutSection: React.FC = () => {
     variant="default" 
     size="lg"
     className="group hover:bg-primary/90 transition-all duration-300"
-    onClick={() => window.open('/PRATEEKS CV.pdf', '_blank')}
+    onClick={() => window.open('/PRATEEKAGARWALRESUME(2).pdf', '_blank')}
   >
     <FileDown className="mr-2 h-5 w-5 group-hover:animate-bounce" />
     Download CV
